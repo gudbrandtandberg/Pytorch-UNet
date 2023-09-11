@@ -112,8 +112,8 @@ class BasicDataset(Dataset):
         ), f"Image and mask {name} should be the same size, but are {img.size} and {mask.size}"
 
         return {
-            "image": img.copy(),
-            "mask": mask.copy(),
+            "image": img,
+            "mask": mask,
         }
         # img = self.preprocess(self.mask_values, img, self.scale, is_mask=False)
         # mask = self.preprocess(self.mask_values, mask, self.scale, is_mask=True)
