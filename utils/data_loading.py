@@ -1,14 +1,14 @@
 import logging
-from functools import lru_cache, partial
-from itertools import repeat
-from multiprocessing import Pool
-from os import listdir
-from os.path import isfile, join, splitext
-from pathlib import Path
-
 import numpy as np
 import torch
 from PIL import Image
+from functools import lru_cache
+from functools import partial
+from itertools import repeat
+from multiprocessing import Pool
+from os import listdir
+from os.path import splitext, isfile, join
+from pathlib import Path
 from torch.utils.data import Dataset
 from tqdm import tqdm
 
