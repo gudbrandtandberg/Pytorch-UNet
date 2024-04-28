@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 from tqdm import tqdm
 
-from utils.dice_score import multiclass_dice_coeff, dice_coeff
+from chessvision.pytorch_unet.utils.dice_score import dice_coeff, multiclass_dice_coeff
 
 
 @torch.inference_mode()
